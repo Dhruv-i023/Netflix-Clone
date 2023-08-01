@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Belleza&family=Cinzel:wght@500&family=Merriweather&family=Montserrat&family=Poppins&family=Quicksand:wght@500&family=Radio+Canada&family=Raleway:wght@500&family=Sacramento&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+    color: white;
+}
+
+.header{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(images/header-image.png);
+    background-size: cover;
+    background-position: center;
+    justify-content: space-between;
+    padding: 10px 8%;
+    position: relative;
+}
+
+#logoImg{
+    width: 180px;
+    cursor: pointer;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.header button, #Language2{
+    display: inline-flex;
+    justify-content: space-between;
+    margin-left: 0px;
+}
+
+
+
+nav button, #header-sub, #Language2{
+    border: 0;
+    outline: 1px;
+    background-color: red;
+    padding: 8px 20px;
+    font-size: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+    margin-right: 20px;
+
+}
+
+#Language, #Language2{
+    display: inline-flex;
+    background-color: transparent;
+    align-items: center;
+    border: 1px solid white;
+}
+
+#down{
+    width: 12px;
+    margin-left: 10px;
+}
+
+nav button:hover, #header-sub:hover{
+    background-color: rgb(198, 4, 4);
+}
+
+.header-content{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    margin-top: 80px;
+}
+
+.header-content h1{
+    font-size: 60px;
+    font-weight: 500px;
+}
+
+.header-content h3{
+    font-size: 30px;
+    font-weight: 300px;
+}
+
+.header-content h4, .finalCall h4{
+    font-size: 20px;
+    font-weight: 200px;
+}
+
+.header-content h1, h3, h4 , .finalCall h4{
+    padding: 10px;
+}
+
+#email{
+    width: 20%;
+    padding: 8px;
+    border-radius: 5px;
+    background-color: transparent;
+    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4));
+    border: 1px solid white;
+    font-size: 15px;
+    margin-right: 10px;
+    color: white;
+}
+
+.features{
+    font-size: 22px;
+}
+
+.features div{
+    padding: 50px;
+}
+
+.row{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.text-col h2, .faq h2{
+    font-size: 50px;
+    font-weight: 800px;
+    margin-bottom: 15px;
+}
+
+.img-col img{
+    width: 500px;
+}
+
+.faq{
+    padding : 10px 12%;
+    /* text-align: center; */
+    font-size: 30px;
+}
+
+.faq h2{
+    text-align: center;
+}
+
+.questions{
+    align-items: center;
+}
+
+.questitle, .answer{
+    padding: 15px;
+    position: relative;
+    background-color: rgb(66, 63, 63);
+}
+
+svg{
+    text-decoration: none;
+}
+
+.answer{
+    font-size: 20px;
+    display: none;
+    transition: opacity 0.2s ease;
+}
+
+.questitle{
+    margin-bottom: 1px;
+}
+
+.question{
+    margin-bottom: 8px;
+}
+
+.questitle:hover{
+    background-color: rgb(142, 137, 137);
+}
+
+.questitle svg{
+    width: 30px;
+    top: 22px;
+    right: 10px;
+    position: absolute;
+}
+
+.finalCall{
+    text-align: center;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.footer{
+    padding: 50px 15% 10px;
+    border-top: 5px solid rgb(66, 63, 63);
+}
+
+.footer h2{
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+.footer .frow{
+    display: flex;
+}
+.footer .col{
+    flex-basis: 25%;
+    flex-grow: 1;
+    margin-bottom: 20px;
+}
+
+.footer .col a{
+    display: block;
+    text-decoration: none;
+    color: rgb(66, 63, 63);
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+#Language2{
+    margin-bottom: 30px;
+}
